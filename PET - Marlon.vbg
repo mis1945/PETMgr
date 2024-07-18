@@ -1,0 +1,10 @@
+VBGROUP 5.0
+Project=..\..\Utilities\emailPaySlip\prjEmailPaySlip.vbp
+Project=..\..\My Applications\ggcPETRep\ggcPETRep.vbp
+StartupProject=PETMgr.vbp
+Project=..\..\My Applications\ggcPaySec\ggcPaySec\ggcPaySec.vbp
+Project=..\..\My Applications\ggcTimekeeper\ggcTimekeeper.vbp
+Project=..\..\My Applications\ggcLeave\ggcLeave.vbp
+Project=..\..\My Applications\ggcPayroll\ggcPayroll.vbp
+Project=..\..\My Applications\ggc201File\ggc201File.vbp
+Project=..\..\My Applications\ggcAppDriver\ggcAppDriver.vbp

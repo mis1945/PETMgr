@@ -1,0 +1,1373 @@
+VERSION 5.00
+Object = "{5E9E78A0-531B-11CF-91F6-C2863C385E30}#1.0#0"; "MSFLXGRD.OCX"
+Object = "{34A378CB-112C-461B-94E8-02D25370A1CE}#8.1#0"; "xrControl.ocx"
+Begin VB.Form frmLogManual 
+   BorderStyle     =   0  'None
+   Caption         =   "Log Manual"
+   ClientHeight    =   10035
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   14790
+   KeyPreview      =   -1  'True
+   LinkTopic       =   "Form1"
+   LockControls    =   -1  'True
+   MaxButton       =   0   'False
+   MDIChild        =   -1  'True
+   MinButton       =   0   'False
+   ScaleHeight     =   10035
+   ScaleWidth      =   14790
+   ShowInTaskbar   =   0   'False
+   Begin xrControl.xrButton cmdDetail 
+      Height          =   600
+      Index           =   2
+      Left            =   90
+      TabIndex        =   27
+      TabStop         =   0   'False
+      Top             =   555
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&LOAD EMP"
+      AccessKey       =   "L"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+   End
+   Begin xrControl.xrFrame xrFrame2 
+      Height          =   9345
+      Left            =   1590
+      Tag             =   "wt0;fb0"
+      Top             =   555
+      Width           =   13080
+      _ExtentX        =   23072
+      _ExtentY        =   16484
+      BackColor       =   12632256
+      ClipControls    =   0   'False
+      Begin xrControl.xrFrame xrFrame1 
+         Height          =   1815
+         Left            =   105
+         Tag             =   "wt0;fb0"
+         Top             =   1485
+         Width           =   12840
+         _ExtentX        =   22648
+         _ExtentY        =   3201
+         BackColor       =   12632256
+         ClipControls    =   0   'False
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   0
+            Left            =   1620
+            MaxLength       =   50
+            TabIndex        =   9
+            Top             =   210
+            Width           =   5000
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   2
+            Left            =   1620
+            MaxLength       =   50
+            TabIndex        =   13
+            Top             =   1260
+            Width           =   2415
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   3
+            Left            =   5985
+            MaxLength       =   50
+            TabIndex        =   15
+            Top             =   810
+            Width           =   2415
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   4
+            Left            =   5985
+            MaxLength       =   50
+            TabIndex        =   17
+            Top             =   1260
+            Width           =   2415
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   5
+            Left            =   10275
+            MaxLength       =   50
+            TabIndex        =   19
+            Top             =   810
+            Width           =   2415
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   6
+            Left            =   10275
+            MaxLength       =   50
+            TabIndex        =   21
+            Top             =   1260
+            Width           =   2415
+         End
+         Begin VB.TextBox txtOthers 
+            Appearance      =   0  'Flat
+            Enabled         =   0   'False
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   1
+            Left            =   1620
+            MaxLength       =   50
+            TabIndex        =   11
+            Top             =   810
+            Width           =   2415
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Time Out AM"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   3
+            Left            =   105
+            TabIndex        =   12
+            Top             =   1350
+            Width           =   1155
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Time In AM"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   2
+            Left            =   105
+            TabIndex        =   10
+            Top             =   900
+            Width           =   990
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Employee"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   0
+            Left            =   105
+            TabIndex        =   8
+            Top             =   300
+            Width           =   870
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Time In PM"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   4
+            Left            =   4695
+            TabIndex        =   14
+            Top             =   900
+            Width           =   990
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Time Out PM"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   5
+            Left            =   4680
+            TabIndex        =   16
+            Top             =   1350
+            Width           =   1155
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Overtime In"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   6
+            Left            =   9030
+            TabIndex        =   18
+            Top             =   900
+            Width           =   975
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Overtime Out"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   7
+            Left            =   9030
+            TabIndex        =   20
+            Top             =   1350
+            Width           =   1140
+         End
+      End
+      Begin xrControl.xrFrame xrFrame3 
+         Height          =   1335
+         Left            =   105
+         Tag             =   "wt0;fb0"
+         Top             =   105
+         Width           =   12840
+         _ExtentX        =   22648
+         _ExtentY        =   2355
+         BackColor       =   12632256
+         ClipControls    =   0   'False
+         Begin VB.ComboBox cmbField 
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   390
+            Index           =   7
+            ItemData        =   "frmLogManual.frx":0000
+            Left            =   7695
+            List            =   "frmLogManual.frx":0013
+            Style           =   2  'Dropdown List
+            TabIndex        =   31
+            Top             =   795
+            Width           =   2925
+         End
+         Begin VB.TextBox txtField 
+            Appearance      =   0  'Flat
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   2
+            Left            =   7695
+            MaxLength       =   50
+            TabIndex        =   3
+            Top             =   120
+            Width           =   2355
+         End
+         Begin VB.TextBox txtField 
+            Appearance      =   0  'Flat
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   1
+            Left            =   7695
+            MaxLength       =   50
+            TabIndex        =   7
+            Top             =   795
+            Width           =   5000
+         End
+         Begin VB.TextBox txtField 
+            Appearance      =   0  'Flat
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   3
+            Left            =   1620
+            Locked          =   -1  'True
+            MaxLength       =   50
+            TabIndex        =   5
+            TabStop         =   0   'False
+            Top             =   795
+            Width           =   2415
+         End
+         Begin VB.TextBox txtField 
+            Appearance      =   0  'Flat
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   12
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   420
+            Index           =   0
+            Left            =   1620
+            Locked          =   -1  'True
+            MaxLength       =   50
+            TabIndex        =   1
+            TabStop         =   0   'False
+            Top             =   120
+            Width           =   2415
+         End
+         Begin VB.Shape Shape1 
+            BackStyle       =   1  'Opaque
+            BorderStyle     =   0  'Transparent
+            Height          =   420
+            Left            =   1725
+            Tag             =   "et0;ht2"
+            Top             =   210
+            Width           =   2415
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Tran. Date"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   10
+            Left            =   6165
+            TabIndex        =   2
+            Top             =   210
+            Width           =   900
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Referrence No."
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   9
+            Left            =   105
+            TabIndex        =   4
+            Top             =   885
+            Width           =   1290
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Transaction No."
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   700
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   8
+            Left            =   105
+            TabIndex        =   0
+            Top             =   210
+            Width           =   1485
+         End
+         Begin VB.Label lblField 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Branch Name"
+            BeginProperty Font 
+               Name            =   "Arial"
+               Size            =   9.75
+               Charset         =   0
+               Weight          =   400
+               Underline       =   0   'False
+               Italic          =   0   'False
+               Strikethrough   =   0   'False
+            EndProperty
+            Height          =   240
+            Index           =   1
+            Left            =   6165
+            TabIndex        =   6
+            Top             =   885
+            Width           =   1185
+         End
+      End
+      Begin MSFlexGridLib.MSFlexGrid MSFlexGrid1 
+         Height          =   5880
+         Left            =   105
+         TabIndex        =   30
+         TabStop         =   0   'False
+         Top             =   3345
+         Width           =   12840
+         _ExtentX        =   22648
+         _ExtentY        =   10372
+         _Version        =   393216
+         WordWrap        =   -1  'True
+         Enabled         =   -1  'True
+         FocusRect       =   0
+         SelectionMode   =   1
+         Appearance      =   0
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   9.75
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+      End
+   End
+   Begin xrControl.xrButton cmdButton 
+      Height          =   600
+      Index           =   0
+      Left            =   90
+      TabIndex        =   25
+      Top             =   3075
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&Cancel"
+      AccessKey       =   "C"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":005B
+   End
+   Begin xrControl.xrButton cmdButton 
+      Height          =   600
+      Index           =   2
+      Left            =   90
+      TabIndex        =   23
+      Top             =   2445
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&Save"
+      AccessKey       =   "S"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":07D5
+   End
+   Begin xrControl.xrButton cmdButton 
+      Height          =   600
+      Index           =   4
+      Left            =   90
+      TabIndex        =   24
+      Top             =   3075
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&Close"
+      AccessKey       =   "C"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":0F4F
+   End
+   Begin xrControl.xrButton cmdButton 
+      Height          =   600
+      Index           =   1
+      Left            =   90
+      TabIndex        =   26
+      TabStop         =   0   'False
+      Top             =   555
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "Searc&h"
+      AccessKey       =   "h"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":16C9
+   End
+   Begin xrControl.xrButton cmdButton 
+      Height          =   600
+      Index           =   3
+      Left            =   90
+      TabIndex        =   22
+      Top             =   2445
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&New"
+      AccessKey       =   "N"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":1E43
+   End
+   Begin xrControl.xrButton cmdDetail 
+      Height          =   600
+      Index           =   1
+      Left            =   90
+      TabIndex        =   28
+      TabStop         =   0   'False
+      Top             =   1185
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&ADD"
+      AccessKey       =   "A"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":25BD
+   End
+   Begin xrControl.xrButton cmdDetail 
+      Height          =   600
+      Index           =   0
+      Left            =   90
+      TabIndex        =   29
+      TabStop         =   0   'False
+      Top             =   1815
+      Width           =   1245
+      _ExtentX        =   2196
+      _ExtentY        =   1058
+      Caption         =   "&DEL"
+      AccessKey       =   "D"
+      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Picture         =   "frmLogManual.frx":364F
+   End
+End
+Attribute VB_Name = "frmLogManual"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Explicit
+Private Const pxeMODULENAME = "frmLogManual"
+
+Private WithEvents oTrans As clsLogManual
+Attribute oTrans.VB_VarHelpID = -1
+Private oSkin As clsFormSkin
+Private oDriver As New clsFormDriver
+Private bLoaded As Boolean
+
+Dim pnIndex As Integer
+Dim pnRow As Integer
+Dim pnActiveRow As Integer
+
+Dim pbCtrlPress As Boolean
+Dim pbFormLoad As Boolean
+Dim pbDetailGotFocus As Boolean
+Dim pbHaveRefNo As Boolean
+Dim pbCopy2All As Boolean
+Dim pbByBranch As Boolean
+
+Property Let ByBranch(vValue As Boolean)
+   pbByBranch = vValue
+End Property
+
+
+Private Sub cmbField_Validate(Index As Integer, Cancel As Boolean)
+   oTrans.Master("sBranchCd") = cmbField(Index).ListIndex
+End Sub
+
+Private Sub cmdButton_Click(Index As Integer)
+   Dim lnRep As Integer
+   
+   Select Case Index
+      Case 0 'cancel
+         lnRep = MsgBox("Are you certain in aborting the current transaction?", vbQuestion + vbYesNo, "Confirm")
+         
+         If lnRep = vbYes Then
+            Call InitGrid
+            Call InitForm(1)
+            Call InitOthers(0)
+            Call ClearFields
+            Call ClearOthers
+         End If
+      Case 1 'search
+         If pnIndex = 0 Then
+            Call oTrans.SearchDetail(pnRow, 0, txtOthers(pnIndex))
+         ElseIf pnIndex = 1 Then
+            Call oTrans.SearchMaster(Index, txtField(pnIndex))
+         Else
+            GoTo endProc
+         End If
+      Case 2 'save
+         Call oTrans.DeleteDetail(oTrans.ItemCount)
+         If oTrans.SaveTransaction Then Call cmdButton_Click(3)
+      Case 3 'new
+         Call InitGrid
+         Call InitForm(0)
+         Call InitOthers(0)
+         Call ClearFields
+         Call ClearOthers
+         oTrans.NewTransaction
+         
+         If pbByBranch = False Then
+            oTrans.Master("sBranchCd") = 1
+         End If
+         
+         LoadMaster
+         If pbByBranch Then
+            txtField(1).SetFocus
+         Else
+            cmbField(7).SetFocus
+         End If
+      Case 4 'close
+         Unload Me
+   End Select
+   
+endProc:
+   Exit Sub
+End Sub
+
+Private Sub cmdDetail_Click(Index As Integer)
+   Dim lnCtr As Integer
+   Dim lnCtr1 As Integer
+   Dim lnRow As Integer
+   
+   If Not pbHaveRefNo Then GoTo endProc
+   
+   Select Case Index
+      Case 0   'delete
+         
+         If oTrans.ItemCount = 0 Then GoTo endProc
+         
+         If oTrans.DeleteDetail(pnActiveRow - 1) Then
+            LoadDetail
+            ClearOthers
+            Call detailFieldChange
+            GoTo endWithFocus
+         End If
+      Case 1   'add
+         If oTrans.ItemCount = 0 Then
+            oTrans.InitTransaction
+            pnRow = 0
+         End If
+         If oTrans.Detail(pnRow, 0) = "" Then GoTo endProc
+         
+         With MSFlexGrid1
+            .Rows = .Rows + 1
+            .TextMatrix(pnRow + 1, 0) = pnRow + 1
+            For lnCtr = 0 To 6
+               .TextMatrix(pnRow + 1, lnCtr + 1) = IFNull(oTrans.Detail(pnRow, lnCtr), "")
+            Next
+         
+            Call oTrans.AddDetail
+            ClearOthers
+            
+            If MSFlexGrid1.Rows > 16 Then
+               .ColWidth(1) = 3050
+               .TopRow = pnRow
+            Else
+               .ColWidth(1) = 3300
+            End If
+               
+            .TextMatrix(pnRow + 1, 0) = pnRow + 1
+            .Row = pnRow + 1
+            pnActiveRow = .Row
+         End With
+         GoTo endWithFocus
+      Case 2
+         If oTrans.loadEmployee Then
+            lnRow = oTrans.ItemCount
+            
+            With MSFlexGrid1
+               MSFlexGrid1.Rows = lnRow + 1
+               If MSFlexGrid1.Rows > 16 Then
+                  .ColWidth(1) = 3050
+               Else
+                  .ColWidth(1) = 3300
+               End If
+               
+               For lnCtr = 0 To lnRow - 1
+                  MSFlexGrid1.TextMatrix(lnCtr + 1, 0) = lnCtr + 1
+                  For lnCtr1 = 0 To 6
+                     MSFlexGrid1.TextMatrix(lnCtr + 1, lnCtr1 + 1) = IFNull(oTrans.Detail(lnCtr, lnCtr1), "")
+                  Next
+               Next
+               Call detailFieldChange
+            End With
+            Call flexFocus
+         Else
+            MSFlexGrid1.Rows = 2
+         End If
+         GoTo endWithFocus
+   End Select
+   
+endProc:
+   Exit Sub
+endWithFocus:
+   txtOthers(0).SetFocus
+   GoTo endProc
+End Sub
+
+Private Sub Form_Activate()
+   Dim lsOldProc As String
+
+   lsOldProc = "Form_Activate"
+   'On Error GoTo errProc
+
+   oApp.MenuName = Me.Tag
+   Me.ZOrder 0
+
+   If bLoaded = False Then
+      oTrans.NewTransaction
+      
+      If pbByBranch Then
+         txtField(1).Text = oApp.BranchName
+      Else
+         'Set the default value to 1
+         oTrans.HasParent = True
+         oTrans.Master(7) = 1
+         cmbField(7).ListIndex = Val(oTrans.Master(7))
+      End If
+      
+      bLoaded = True
+      
+      If oApp.BranchCode <> "M001" Then
+         cmbField(7).Visible = False
+         txtField(1).Visible = True
+         txtField(1).TabStop = False
+         txtField(1).Locked = True
+      Else
+         If pbByBranch Then
+            lblField(1) = "Branch Name"
+            cmbField(7).Visible = False
+            txtField(1).Visible = True
+         Else
+            lblField(1) = "Employee Level"
+            cmbField(7).Visible = True
+            txtField(1).Visible = False
+         End If
+      End If
+   End If
+   
+   LoadMaster
+
+   If Not pbFormLoad Then pbFormLoad = True
+   pnActiveRow = 1
+   pnRow = 0
+   
+endProc:
+   Exit Sub
+errProc:
+   ShowError lsOldProc & "( " & " )", True
+End Sub
+
+Private Sub Form_KeyDown(KeyCode As Integer, Shift As Integer)
+   With MSFlexGrid1
+      Select Case KeyCode
+      Case vbKeyReturn
+         If GetFocus = .hWnd Then Exit Sub
+         SetNextFocus
+      Case vbKeyDown
+         If pbCtrlPress Then
+            If pnActiveRow = .Rows - 1 Then Exit Sub
+            
+            If Not (pnActiveRow = 0) Then
+               pnActiveRow = pnActiveRow + 1
+            End If
+            
+            .Row = pnActiveRow
+            
+            If Not .RowIsVisible(.Row + IIf(.Row = .Rows - 1, 0, 1)) Then .TopRow = .Row - 1
+
+            Call detailFieldChange
+         Else
+            If Not (GotFocus = cmbField(7).hWnd) Then
+               SetNextFocus
+            End If
+         End If
+      Case vbKeyUp
+         If pbCtrlPress Then
+            If .Row > 1 Then
+               If Not (pnActiveRow = 1) Then
+                  pnActiveRow = pnActiveRow - 1
+               End If
+               
+               .Row = pnActiveRow
+   
+               If Not .RowIsVisible(.Row) Then .TopRow = .TopRow - 1
+
+               Call detailFieldChange
+            End If
+         Else
+            If Not (GotFocus = cmbField(7).hWnd) Then
+               SetPreviousFocus
+            End If
+         End If
+      Case vbKeyControl
+         pbCtrlPress = True
+      End Select
+   End With
+End Sub
+
+Private Sub Form_Load()
+   Dim lsOldProc As String
+
+   lsOldProc = "Form_Load"
+'   On Error GoTo errProc
+
+   CenterChildForm mdiMain, Me
+
+   Set oDriver = New clsFormDriver
+   Set oDriver.AppDriver = oApp
+   Set oDriver.MainForm = Me
+
+   Set oSkin = New clsFormSkin
+   Set oSkin.AppDriver = oApp
+   Set oSkin.Form = Me
+   oSkin.ApplySkin xeFormTransEqualLeft
+
+   Set oTrans = New clsLogManual
+   Set oTrans.AppDriver = oApp
+   oTrans.Branch = oApp.BranchCode
+   oTrans.InitTransaction
+
+   Call InitGrid
+   Call InitForm(0)
+   Call InitOthers(0)
+endProc:
+   Exit Sub
+errProc:
+   ShowError lsOldProc & "( " & " )", True
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+   Set oTrans = Nothing
+   Set oSkin = Nothing
+   
+   pnActiveRow = 0
+   pbFormLoad = False
+   pbCtrlPress = False
+   bLoaded = False
+
+End Sub
+
+Private Sub detailFieldChange()
+   Dim lnCtr As Integer
+   Dim lnRow As Integer
+
+   lnRow = pnActiveRow - 1
+   
+   With oTrans
+      For lnCtr = 0 To 6
+         txtOthers(lnCtr) = IFNull(.Detail(lnRow, lnCtr), "")
+      Next
+   End With
+   
+   MSFlexGrid1.Col = 1
+   MSFlexGrid1.ColSel = MSFlexGrid1.Cols - 1
+End Sub
+Private Sub InitGrid()
+   Dim lnCtr As Integer
+   With MSFlexGrid1
+      .Cols = 8
+      .Rows = 2
+      
+      .Clear
+      
+      .Row = 0
+      'column alignment
+      For lnCtr = 0 To .Cols - 1
+         .Col = lnCtr
+         .CellFontBold = True
+         .CellAlignment = flexAlignCenterCenter
+      Next
+      .Row = 1
+      'column title
+      .TextMatrix(0, 0) = "NO"
+      .TextMatrix(0, 1) = "EMPLOYEE NAME"
+      .TextMatrix(0, 2) = "AM IN"
+      .TextMatrix(0, 3) = "AM OUT"
+      .TextMatrix(0, 4) = "PM IN"
+      .TextMatrix(0, 5) = "PM OUT"
+      .TextMatrix(0, 6) = "OT IN"
+      .TextMatrix(0, 7) = "OT OUT"
+      .TextMatrix(1, 0) = "1"
+      .RowHeightMin = 338
+      
+      'column width
+      .ColWidth(0) = 500
+      .ColWidth(1) = 3300
+      .ColWidth(2) = 1500
+      .ColWidth(3) = 1500
+      .ColWidth(4) = 1500
+      .ColWidth(5) = 1500
+      .ColWidth(6) = 1500
+      .ColWidth(7) = 1500
+      
+      'column allinment
+      .ColAlignment(0) = flexAlignLeftCenter
+      .ColAlignment(1) = flexAlignLeftCenter
+      .ColAlignment(2) = flexAlignCenterCenter
+      .ColAlignment(3) = flexAlignCenterCenter
+      .ColAlignment(4) = flexAlignCenterCenter
+      .ColAlignment(5) = flexAlignCenterCenter
+      .ColAlignment(6) = flexAlignCenterCenter
+      .ColAlignment(7) = flexAlignCenterCenter
+                  
+      .Row = 1
+      .Col = 1
+      .ColSel = .Cols - 1
+   End With
+End Sub
+
+Private Sub LoadMaster()
+   txtField(0) = oTrans.Master(0)
+   
+   If Not pbByBranch Then
+      cmbField(7).ListIndex = oTrans.Master(7)
+   End If
+
+End Sub
+
+Private Sub LoadDetail()
+   Dim lnRow As Integer
+   Dim lnCtr As Integer
+            
+   If oTrans.ItemCount = 0 Then oTrans.InitTransaction
+   lnRow = oTrans.ItemCount
+ 
+   With MSFlexGrid1
+      .Rows = lnRow + 1
+      
+      If MSFlexGrid1.Rows > 16 Then
+         .ColWidth(1) = 3050
+      Else
+         .ColWidth(1) = 3300
+      End If
+      
+      For lnCtr = 0 To lnRow - 1
+         .TextMatrix(lnCtr + 1, 0) = lnCtr + 1
+         .TextMatrix(lnCtr + 1, 1) = IFNull(oTrans.Detail(lnCtr, 0), "")
+         .TextMatrix(lnCtr + 1, 2) = IFNull(oTrans.Detail(lnCtr, 1), "")
+         .TextMatrix(lnCtr + 1, 3) = IFNull(oTrans.Detail(lnCtr, 2), "")
+         .TextMatrix(lnCtr + 1, 4) = IFNull(oTrans.Detail(lnCtr, 3), "")
+         .TextMatrix(lnCtr + 1, 5) = IFNull(oTrans.Detail(lnCtr, 4), "")
+         .TextMatrix(lnCtr + 1, 6) = IFNull(oTrans.Detail(lnCtr, 5), "")
+         .TextMatrix(lnCtr + 1, 7) = IFNull(oTrans.Detail(lnCtr, 6), "")
+      Next
+      
+      pnActiveRow = .Row
+   End With
+   
+End Sub
+
+Private Sub MSFlexGrid1_Click()
+   Dim lnCtr As Integer
+   'Try this out...
+'   If oTrans.ItemCount = 1 Then Exit Sub
+      
+   With oTrans
+      pnActiveRow = MSFlexGrid1.Row
+      pnRow = pnActiveRow - 1
+      
+      For lnCtr = 0 To 6
+         txtOthers(lnCtr) = Format(IFNull(.Detail(pnActiveRow - 1, lnCtr), ""), "HH:MM AM/PM")
+      Next
+   End With
+   
+   If xrFrame1.Enabled Then txtOthers(0).SetFocus
+   
+End Sub
+
+Private Sub oTrans_DetailRetrieved(ByVal Index As Integer, ByVal Value As Variant)
+   With txtOthers(Index)
+      .Text = IFNull(Value, "")
+   End With
+
+'   If pnActiveRow < 1 Or pbCopy2All Or (MSFlexGrid1.Row = MSFlexGrid1.Rows - 1) Then Exit Sub
+   If pnActiveRow < 1 Or pbCopy2All Then Exit Sub
+   
+   With MSFlexGrid1
+      .TextMatrix(pnActiveRow, Index + 1) = IFNull(Value, "")
+   End With
+End Sub
+
+Private Sub oTrans_MasterRetrieved(ByVal Index As Variant, ByVal Value As Variant)
+   With txtField(Index)
+      Select Case Index
+         Case 2
+            .Text = strLongDate(IFNull(Value, ""))
+         Case Else
+            .Text = IFNull(Value, "")
+      End Select
+   End With
+End Sub
+Private Sub txtField_GotFocus(Index As Integer)
+   
+   Select Case Index
+      Case 2
+         txtField(Index) = strShortDate(txtField(Index))
+   End Select
+   
+   
+   With txtField(Index)
+      .BackColor = oApp.getColor("HT1")
+      .SelStart = 0
+      .SelLength = Len(.Text)
+   End With
+   
+
+   oDriver.ColumnIndex = Index
+   pnIndex = Index
+End Sub
+Private Sub txtField_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
+   If Index <> 1 Then Exit Sub
+   Select Case KeyCode
+      Case vbKeyF3, vbKeyReturn
+         If oTrans.SearchMaster(Index, txtField(Index)) Then LoadDetail
+         
+   End Select
+End Sub
+
+Private Sub MSFlexGrid1_GotFocus()
+   pbDetailGotFocus = True
+   If xrFrame1.Enabled = False Then Exit Sub
+End Sub
+Private Sub Form_KeyUp(KeyCode As Integer, Shift As Integer)
+   If pbCtrlPress Then
+      If KeyCode = vbKeyControl Then pbCtrlPress = False
+   End If
+End Sub
+
+Private Sub txtField_LostFocus(Index As Integer)
+   With txtField(Index)
+      .BackColor = oApp.getColor("EB")
+   End With
+End Sub
+
+Private Sub txtField_Validate(Index As Integer, Cancel As Boolean)
+   With txtField(Index)
+      oTrans.Master(Index) = .Text
+   End With
+   If Index = 2 And Not txtField(Index) = "" Then
+      Call InitOthers(1)
+   End If
+End Sub
+
+Private Sub txtOthers_GotFocus(Index As Integer)
+   With txtOthers(Index)
+      .BackColor = oApp.getColor("HT1")
+   End With
+   
+   pnIndex = Index
+End Sub
+Private Sub txtOthers_KeyDown(Index As Integer, KeyCode As Integer, Shift As Integer)
+   Dim lnRow As Integer
+   Select Case Index
+      Case 0
+         Select Case KeyCode
+            Case vbKeyReturn
+                  If oTrans.Detail(IIf(pnActiveRow > 0, pnActiveRow - 1, pnActiveRow), Index) = "" Then
+                  Call oTrans.SearchDetail(pnRow, Index, txtOthers(Index))
+               Else
+                  MsgBox "Unable to overwrite row data." + vbCrLf + _
+                     "Delete the row if incorrect entry.", vbInformation
+                  txtOthers(Index).SetFocus
+               End If
+            Case vbKeyF3
+               If oTrans.Detail(IIf(pnActiveRow > 0, pnActiveRow - 1, pnActiveRow), Index) = "" Then
+                  Call oTrans.SearchDetail(pnRow, Index, txtOthers(Index))
+               Else
+                  MsgBox "Unable to overwrite row data." + vbCrLf + _
+                     "Delete the row if incorrect entry.", vbInformation
+                  txtOthers(Index).SetFocus
+               End If
+            Case vbKeyAdd
+               If pbCtrlPress Then Call cmdDetail_Click(1)
+            Case vbKeySubtract
+               If pbCtrlPress Then Call cmdDetail_Click(0)
+         End Select
+      Case Else
+         Select Case KeyCode
+            Case vbKeyF12
+               If pbCtrlPress Then Call CopyT2AllEmp
+         End Select
+   End Select
+End Sub
+
+Private Sub txtOthers_LostFocus(Index As Integer)
+   With txtOthers(Index)
+      .BackColor = oApp.getColor("EB")
+   End With
+End Sub
+
+Private Sub txtOthers_Validate(Index As Integer, Cancel As Boolean)
+   If Index = 0 Or (pnActiveRow < 1) Then Exit Sub
+   
+   oTrans.Detail(pnActiveRow - 1, Index) = getCTime(txtOthers(Index))
+End Sub
+
+Private Sub InitForm(ByVal fnEdit As Integer)
+   Dim lnCtr As Integer
+   
+   xrFrame1.Enabled = False
+   xrFrame2.Enabled = (fnEdit = 0)
+   cmdButton(3).Visible = Not (fnEdit = 0)
+   cmdButton(4).Visible = Not (fnEdit = 0)
+
+   cmdButton(0).Visible = (fnEdit = 0)
+   cmdButton(1).Visible = (fnEdit = 0)
+   cmdButton(2).Visible = (fnEdit = 0)
+   
+   If fnEdit = 1 Then
+      pnActiveRow = 1
+      pnRow = 0
+   End If
+End Sub
+
+Private Sub InitOthers(ByVal fnEdit As Integer)
+'   Dim locmd As xrButton
+   Dim lnCtr As Integer
+   
+   Select Case fnEdit
+   Case 0
+      pbHaveRefNo = False
+      For lnCtr = 1 To 6
+         txtOthers(lnCtr).Enabled = False
+      Next
+   Case 1
+      pbHaveRefNo = True
+      xrFrame1.Enabled = True
+      txtOthers(1).Enabled = oTrans.IsActiveAMInxxxx
+      txtOthers(2).Enabled = oTrans.IsActiveAMOutxxx
+      txtOthers(3).Enabled = oTrans.IsActivePMInxxxx
+      txtOthers(4).Enabled = oTrans.IsActivePMOutxxx
+      txtOthers(5).Enabled = oTrans.IsActiveOTimeInx
+      txtOthers(6).Enabled = oTrans.IsActiveOTimeOut
+      txtOthers(0).SetFocus
+   End Select
+End Sub
+
+Private Sub ClearFields()
+   Dim lnCtr As Integer
+
+   For lnCtr = 0 To 3
+      txtField(lnCtr) = ""
+   Next
+End Sub
+
+Private Sub ClearOthers()
+   Dim lnCtr As Integer
+   
+   For lnCtr = 0 To 6
+      txtOthers(lnCtr) = ""
+   Next
+   
+   pnRow = oTrans.ItemCount - 1
+End Sub
+
+Private Sub CopyT2AllEmp()
+   Dim lnCtr As Integer
+   pbCopy2All = True
+   For lnCtr = 0 To oTrans.ItemCount - 1
+      With oTrans
+         .Detail(lnCtr, pnIndex) = txtOthers(pnIndex)
+         
+         MSFlexGrid1.TextMatrix(lnCtr + 1, pnIndex + 1) = .Detail(lnCtr, pnIndex)
+      End With
+   Next
+   pbCopy2All = False
+End Sub
+Private Sub flexFocus()
+   With MSFlexGrid1
+      If .Row > 15 Then .TopRow = 1
+      .Row = 1
+      .Col = 1
+      .ColSel = .Cols - 1
+      .SetFocus
+      pbDetailGotFocus = True
+   End With
+End Sub
+
+
